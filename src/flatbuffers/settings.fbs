@@ -1,0 +1,16 @@
+namespace demo;
+
+enum SettingId : int64 {
+  ProductName,
+  TrayCount
+}
+
+struct SettingItem {
+   id:SettingId;
+}
+
+table Settings {
+  settings:[SettingItem];
+}
+
+root_type Settings;
